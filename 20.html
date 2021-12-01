@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <!--設定裝置縮放的模式，視窗內容寬度等於裝置的寬度，縮放比例及shrink的bug修正-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .amos{
+            width: 100%;
+            height: 300px;
+            display: none;
+        }
+        .amos1{
+            background-color: #faa;
+        }
+        .amos2{
+            background-color: #aaf;
+        }
+        @media screen and (min-width:768px){
+            .amos{
+                width: 50%;
+                float: left;
+                background-color: #f00;
+                display: block;
+            }
+        }
+        @media screen and (min-width:1200px){
+            .amos{
+                background-color: #00f;
+
+            }
+        }
+        /*@media特性:
+        1.裝置的螢幕尺寸，也關係到裝置解析度
+        2.設備的寬與高
+        3.方向
+        4.解析度*/
+        /*and(條件)*/
+        /*是RWD基礎,不同的顏色，可應用在廣告顯示上*/
+    </style>
+</head>
+<body>
+    <div class="amos amos1"></div>
+    <div class="amos amos2"></div>
+</body>
+</html>
